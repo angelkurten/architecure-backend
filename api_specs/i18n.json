@@ -1,0 +1,29 @@
+{
+  "swagger": "2.0",
+  "x-navigateMethodsByName": true,
+  "x-sortMethodsBy": [
+    "path",
+    "operation"
+  ],
+  "info": {
+    "description": "Conjunto de reglas y buenas practicas para internacionalizar las aplicaciones",
+    "version": "1.0.0",
+    "title": "i18n",
+    "termsOfService": "",
+    "contact": {
+      "email": "juanescobar@merqueo.com"
+    },
+    "license": {
+      "name": "privada",
+      "url": "https://licence.merqueo.com"
+    }
+  },
+  "host": "xxx.merqueo.com",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "paths": {},
+  "definitions": {}
+}

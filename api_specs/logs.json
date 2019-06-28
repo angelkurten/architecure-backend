@@ -1,0 +1,29 @@
+{
+  "swagger": "2.0",
+  "x-navigateMethodsByName": true,
+  "x-sortMethodsBy": [
+    "path",
+    "operation"
+  ],
+  "info": {
+    "description": "ELK. Definicion de conceptos, Conjunto de reglas y buenas practicas para los logs.",
+    "version": "1.0.0",
+    "title": "Logs",
+    "termsOfService": "",
+    "contact": {
+      "email": "moviedo@merqueo.com"
+    },
+    "license": {
+      "name": "privada",
+      "url": "https://licence.merqueo.com"
+    }
+  },
+  "host": "xxx.merqueo.com",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "paths": {},
+  "definitions": {}
+}
