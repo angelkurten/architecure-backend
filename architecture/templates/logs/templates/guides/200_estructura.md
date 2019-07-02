@@ -44,7 +44,7 @@ Es un formato de logs que se crea para evitar las deficiencias presentes en el s
 ```
     {
         "version": "1.0", 
-        "host": "merqueo.com", 
+        "host": "mensajerosurbanos.com", 
         "short_message": "A short message that helps you identify what is going on", 
         "full_message": "trace", 
         "timestamp": 1385053862, 

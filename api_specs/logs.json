@@ -11,14 +11,14 @@
     "title": "Logs",
     "termsOfService": "",
     "contact": {
-      "email": "moviedo@merqueo.com"
+      "email": "a.kurten@mensajerosurbanos.com"
     },
     "license": {
       "name": "privada",
-      "url": "https://licence.merqueo.com"
+      "url": "https://licence.mensajerosurbanos.com"
     }
   },
-  "host": "xxx.merqueo.com",
+  "host": "xxx.mensajerosurbanos.com",
   "basePath": "/",
   "tags": [],
   "schemes": [
