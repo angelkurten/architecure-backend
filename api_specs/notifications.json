@@ -1,0 +1,135 @@
+{
+    "swagger": "2.0",
+    "x-navigateMethodsByName": true,
+    "x-sortMethodsBy": ["path", "operation"],
+    "info": {
+        "description": "Microservicio para enviar notificaciones SMS y EMAIL",
+        "version": "1.0.0",
+        "title": "Microservicio Notificaciones",
+        "termsOfService": "",
+        "contact": {
+            "email": "a.kurten@mensajerosurbanos.com"
+        },
+        "license": {
+            "name": "privada",
+            "url": "https://licence.mensajerosurbanos.com"
+        }
+    },
+    "host": "xxx.mensajerosurbanos.com",
+    "basePath": "/",
+    "tags": [],
+    "schemes": ["https"],
+    "paths": {
+        "/sms": {
+            "POST": {
+                "tags": ["responses"],
+                "summary": "Endpoint for send SMS",
+                "consumes": ["application/x-www-form-urlencoded"],
+                "produces": ["application/json"],
+                "parameters": [{
+                    "name" : "to",
+                    "in": "path",
+                    "description": "Number for send SMS",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "message",
+                    "in": "path",
+                    "description": "Message for  SMS",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "provider",
+                    "in": "path",
+                    "description": "Channel/provider for send SMS",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "token",
+                    "in": "path",
+                    "description": "Security token for auth",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "schema": {
+                            "$ref": "#/definitions/Array"
+                        }
+                    }
+                }
+            }
+        },
+        "/email": {
+            "POST": {
+                "tags": ["responses"],
+                "summary": "Endpoint for send EMAIL",
+                "consumes": ["application/x-www-form-urlencoded"],
+                "produces": ["application/json"],
+                "parameters": [{
+                    "name" : "from",
+                    "in": "path",
+                    "description": "From EMAIL",
+                    "required": true,
+                    "type": "string"
+                },{
+                    "name" : "to",
+                    "in": "path",
+                    "description": "To EMAIL",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "subject",
+                    "in": "path",
+                    "description": "Message for  EMAIL",
+                    "required": true,
+                    "type": "string"
+                },{
+                    "name" : "message",
+                    "in": "path",
+                    "description": "Message for  EMAIL",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "provider",
+                    "in": "path",
+                    "description": "Channel/provider for send EMAIL",
+                    "required": true,
+                    "type": "string"
+                }, {
+                    "name" : "token",
+                    "in": "path",
+                    "description": "Security token for auth",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "schema": {
+                            "$ref": "#/definitions/Array"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Array": {
+            "type": "object",
+            "title": "Respuesta Array",
+            "properties": {
+                "result": {
+                    "type": "array",
+                    "title": "",
+                    "items": []
+                }
+            },
+            "required": ["result"],
+            "example": {
+                "result": true
+            }
+        }
+    }
+}

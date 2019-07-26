@@ -8,6 +8,7 @@ dapperdox                                                ^
     -spec-filename=i18n.json                             ^
     -spec-filename=logs.json                             ^
     -spec-filename=estandares-php.json                   ^
+    -spec-filename=notifications.json                   ^
     -site-url=http://localhost:3123                      ^
     -log-level=trace                                     ^
     -author-show-assets=false                            ^
