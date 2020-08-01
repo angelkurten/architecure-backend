@@ -1,7 +1,9 @@
 FROM golang:1.8
 ENV VER 1.1.1
 
-RUN chmod +x /run.sh
+COPY . ./
+
+RUN chmod +x run.sh
 
 
 ENV BIND_ADDR 0.0.0.0:3123
