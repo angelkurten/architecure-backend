@@ -9,4 +9,11 @@ services:
     ports:
       - "3123:3123"
     volumes:
-      - ./:/
+      - ./:/var/www
+    networks:
+      - app-network
+
+#Redes
+networks:
+  app-network:
+    driver: bridge
