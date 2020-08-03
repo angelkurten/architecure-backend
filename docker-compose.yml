@@ -6,8 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile
     image: mu-documentation
+    container_name: mu-documentation
     ports:
-      - "3123:3123"
+      - "81:81"
     volumes:
       - ./:/var/www
     networks:
